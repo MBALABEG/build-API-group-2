@@ -6,7 +6,7 @@ class CreateStores < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.integer :zipcode
-      t.array :inventory
+      t.text :inventory, array: true, default:[]
 
       t.timestamps null: false
     end
