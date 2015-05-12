@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   require 'api_constraints'
 
@@ -14,3 +15,15 @@ SneaKerApi::Application.routes.draw do
 end
 
 
+=======
+Rails.application.routes.draw do
+ 
+  namespace :api do 
+    namespace :v1 do
+      resources :sneakers
+      resources :brands
+      resources :stores
+    end
+  end
+end
+>>>>>>> 87c2e4f75f07e300166899ee2dd3da57ef99fe1b
